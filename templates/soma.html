@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Soma</title>
+</head>
+    <body>
+        <form action="/soma" method="POST"> # Define o action (ação de clicar o botão ou executar) e o method ()
+            # Dois tipos de acções. POST ou GET. É o metodo de comunicação com as páginas. Quando é POST ela é mais lenta, mas mais segura.
+            # Quando é GET é rápida porém ela expõe todos os dados. No caso aqui será o POST.
+
+            <label for="num1Label">Número 01:</label> # for é para fazer uma referencia para a label
+            <input type="number" name="num1Input" class="form-control" id="num1Label" placeholder="Informe um número"> # number pois só aceita números.
+            # Name é o nome de referência. id para referencia de que pertencia ao label acima e placeholder para aparecer em cinza
+
+            <label for="num2Label">Número 02:</label>
+            <input type="number" name="num2Input" class="form-control" id="num2Label" placeholder="Informe outro número">
+
+            <button type="submit" class="botaoSomar">somar</button>
+
+        </form>
+    </body>
+</html>
